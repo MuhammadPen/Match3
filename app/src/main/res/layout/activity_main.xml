@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="5dp"
     tools:context="com.muhammadpen.match3.MainActivity">
 
     <GridLayout
@@ -24,8 +25,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:onClick="centerOnClick"
-            app:srcCompat="@drawable/dot1"
-            android:tag="0"/>
+            android:tag="0"
+            app:srcCompat="@drawable/dot1" />
 
         <ImageView
             android:id="@+id/imageView12"
@@ -33,8 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:onClick="centerOnClick"
-            app:srcCompat="@drawable/dot1"
-            android:tag="1"/>
+            android:tag="1"
+            app:srcCompat="@drawable/dot1" />
 
         <ImageView
             android:id="@+id/imageView13"
@@ -42,8 +43,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:onClick="centerOnClick"
-            app:srcCompat="@drawable/dot1"
-            android:tag="2"/>
+            android:tag="2"
+            app:srcCompat="@drawable/dot1" />
 
         <ImageView
             android:id="@+id/imageView21"
@@ -52,8 +53,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:onClick="centerOnClick"
-            app:srcCompat="@drawable/dot1"
-            android:tag="3"/>
+            android:tag="3"
+            app:srcCompat="@drawable/dot1" />
 
         <ImageView
             android:id="@+id/imageView22"
@@ -63,7 +64,7 @@
             android:layout_marginTop="10dp"
             android:onClick="centerOnClick"
             android:src="@drawable/dot1"
-            android:tag="4"/>
+            android:tag="4" />
 
         <ImageView
             android:id="@+id/imageView23"
@@ -72,8 +73,8 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:onClick="centerOnClick"
-            app:srcCompat="@drawable/dot1"
-            android:tag="5"/>
+            android:tag="5"
+            app:srcCompat="@drawable/dot1" />
 
         <ImageView
             android:id="@+id/imageView31"
@@ -82,8 +83,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:onClick="centerOnClick"
-            app:srcCompat="@drawable/dot1"
-            android:tag="6"/>
+            android:tag="6"
+            app:srcCompat="@drawable/dot1" />
 
         <ImageView
             android:id="@+id/imageView32"
@@ -92,8 +93,8 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:onClick="centerOnClick"
-            app:srcCompat="@drawable/dot1"
-            android:tag="7"/>
+            android:tag="7"
+            app:srcCompat="@drawable/dot1" />
 
         <ImageView
             android:id="@+id/imageView33"
@@ -102,7 +103,39 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:onClick="centerOnClick"
-            app:srcCompat="@drawable/dot1"
-            android:tag="8"/>
+            android:tag="8"
+            app:srcCompat="@drawable/dot1" />
+
     </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/victoryPopUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/victoryFor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Victory for"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="reset"
+            android:text="Reset" />
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
