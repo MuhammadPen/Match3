@@ -74,25 +74,14 @@ public class MainActivity extends AppCompatActivity {
 
                     String winner = "Green";
 
+                    victoryFor.setText("Victory For " + winner);
+
                     if (gameState[victoryPosition[0]] == 2)
                     {
                         winner = "Purple";
+                        victoryFor.setText("Victory For " + winner);
+
                     }
-                    victoryFor.setText("Victory For " + winner);
-
-                        boolean draw = true;
-                        for (int fieldState : gameState) {
-                            if (fieldState == 0) {
-                                draw = false;
-                            } else {
-                                draw = true;
-                                victoryFor.setText("Its a draw.");
-                            }
-                        }
-
-
-
-
 
 
                     gameActive = 0;
